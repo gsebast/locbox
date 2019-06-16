@@ -1,0 +1,6 @@
+platforms:
+  ubuntu:
+    18.04:
+      box: ubuntu/bionic64
+      box_url:
+      box_download_insecure: true

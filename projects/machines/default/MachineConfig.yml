@@ -1,0 +1,22 @@
+ubuntu-default:
+  platform:
+    name: ubuntu
+    version: 18.04
+  networks:
+    - mode: private_network
+      ip: 192.168.144.120
+  synced_folders:
+    - synced_folder:
+      host: .
+      guest: /vagrant
+      disabled: true
+  provider:
+    type: virtualbox
+    customizations:
+      - mod_command: modifyvm
+        param: uuid
+        cpus: 1
+        memory: 512
+  provisioners:
+    - type: shell
+      inline: 'echo A message send to you by the *locbox* default Ubuntu machine.'

@@ -1,0 +1,26 @@
+# Ignore IntelliJ Idea project files
+locbox.iml
+/.idea/
+
+# Ignore Chef related content
+**/.chef/
+
+# Ignore all but the 'default' Powershell scripts
+*.ps1
+!default.ps1
+
+# Ignore all but the 'default' Bash Shell scripts
+*.sh
+!default.sh
+
+# Ignore all YAML files except those located in the '**/default/' folders
+*.yml
+!MachineConfig.yml
+!PlatformConfig.yml
+
+# Special files to be ignored
+*.env
+*_env
+Makefile
+TODO.md
+__*
