@@ -4,7 +4,7 @@ ubuntu-default:
     version: 18.04
   networks:
     - mode: private_network
-      ip: 192.168.144.120
+      ip: 192.160.128.120
   synced_folders:
     - synced_folder:
       host: .
